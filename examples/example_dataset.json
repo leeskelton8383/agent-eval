@@ -1,0 +1,204 @@
+[
+  {
+    "task_id": "task_01",
+    "question": "What is 6 times 7?",
+    "expected_answer": "42",
+    "final_answer": "42",
+    "steps": [
+      {
+        "id": 1,
+        "action": "search for facts",
+        "tool": "search",
+        "observation": "found data"
+      },
+      {
+        "id": 2,
+        "action": "calculate answer",
+        "tool": "calculator",
+        "observation": "got 42"
+      }
+    ],
+    "plan": [
+      "search for facts",
+      "calculate answer"
+    ],
+    "expected_tools": [
+      "search",
+      "calculator"
+    ]
+  },
+  {
+    "task_id": "task_02",
+    "question": "What is the capital of France?",
+    "expected_answer": "Paris",
+    "final_answer": "London",
+    "steps": [
+      {
+        "id": 1,
+        "action": "guess capital",
+        "tool": "none",
+        "observation": "maybe London?"
+      }
+    ],
+    "plan": [
+      "search for capital city"
+    ],
+    "expected_tools": [
+      "search"
+    ]
+  },
+  {
+    "task_id": "task_03",
+    "question": "Which planet is fourth from the sun?",
+    "expected_answer": "Mars",
+    "final_answer": "Mars",
+    "steps": [
+      {
+        "id": 1,
+        "action": "calculate orbit",
+        "tool": "astronomy_tool",
+        "observation": "distance ok"
+      }
+    ],
+    "plan": [
+      "search planetary info",
+      "calculate orbit"
+    ],
+    "expected_tools": [
+      "search",
+      "astronomy_tool"
+    ]
+  },
+  {
+    "task_id": "task_04",
+    "question": "Who painted the Mona Lisa?",
+    "expected_answer": "Leonardo da Vinci",
+    "final_answer": "Leonardo da Vinci",
+    "steps": [
+      {
+        "id": 1,
+        "action": "guess famous painter",
+        "tool": "none",
+        "observation": "da Vinci?"
+      },
+      {
+        "id": 2,
+        "action": "verify guess",
+        "tool": "search",
+        "observation": "confirmed"
+      }
+    ],
+    "plan": [
+      "search art history",
+      "narrow by time period",
+      "verify guess"
+    ],
+    "expected_tools": [
+      "search"
+    ]
+  },
+  {
+    "task_id": "task_05",
+    "question": "What is the boiling point of water in Celsius?",
+    "expected_answer": "100",
+    "final_answer": "100",
+    "steps": [
+      {
+        "id": 1,
+        "action": "search boiling point",
+        "tool": "search",
+        "observation": "100°C"
+      }
+    ],
+    "plan": [
+      "search boiling point"
+    ],
+    "expected_tools": [
+      "search"
+    ]
+  },
+  {
+    "task_id": "task_06",
+    "question": "Who wrote '1984'?",
+    "expected_answer": "George Orwell",
+    "final_answer": "George Orwell",
+    "steps": [
+      {
+        "id": 1,
+        "action": "guess famous author",
+        "tool": "none",
+        "observation": "George Orwell"
+      }
+    ],
+    "plan": [
+      "recall literary authors"
+    ],
+    "expected_tools": []
+  },
+  {
+    "task_id": "task_07",
+    "question": "How many continents are there?",
+    "expected_answer": "7",
+    "final_answer": "6",
+    "steps": [
+      {
+        "id": 1,
+        "action": "search geography",
+        "tool": "search",
+        "observation": "7 continents"
+      },
+      {
+        "id": 2,
+        "action": "make guess",
+        "tool": "none",
+        "observation": "6?"
+      }
+    ],
+    "plan": [
+      "search geography facts"
+    ],
+    "expected_tools": [
+      "search"
+    ]
+  },
+  {
+    "task_id": "task_08",
+    "question": "What year did the Berlin Wall fall?",
+    "expected_answer": "1989",
+    "final_answer": "1989",
+    "steps": [
+      {
+        "id": 1,
+        "action": "search history events",
+        "tool": "search",
+        "observation": "Fall of Berlin Wall: 1989"
+      }
+    ],
+    "plan": [
+      "search historical data"
+    ],
+    "expected_tools": [
+      "search"
+    ]
+  },
+  {
+    "task_id": "task_09",
+    "question": "What's the square root of 81?",
+    "expected_answer": "9",
+    "final_answer": "9",
+    "steps": [
+      {
+        "id": 1,
+        "action": "calculate square root",
+        "tool": "calculator",
+        "observation": "9"
+      }
+    ],
+    "plan": [
+      "calculate square root"
+    ],
+    "expected_tools": [
+      "calculator"
+    ]
+  }
+]
